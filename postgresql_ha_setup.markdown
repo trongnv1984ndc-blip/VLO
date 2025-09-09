@@ -67,9 +67,9 @@ Lặp lại cho từng node.
   1. Cài: `sudo apt install pgbouncer`
   2. User list: `/etc/pgbouncer/userlist.txt`:
      ```bash
-     "myuser" "md5<hashed_password>"
+     "myuser" "SCRAM-SHA-256$4096:B57k...$Cx7h...$Cplz..."
      ```
-     (Lấy hash: `sudo -u postgres psql -c "SELECT md5('mypassword');"`)
+     (Lấy hash: `sudo -u postgres psql -c "SELECT rolname, rolpassword FROM pg_authid WHERE rolname='kynguyenx';"`)
   3. `/etc/pgbouncer/pgbouncer.ini`:
      ```ini
      [databases]
