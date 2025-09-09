@@ -41,8 +41,8 @@ Cập nhật hệ thống trước: `sudo apt update && sudo apt upgrade -y`.
   4. Tạo user/DB:
      ```bash
      sudo -u postgres psql
-     CREATE USER myuser WITH PASSWORD 'mypassword';
-     CREATE DATABASE mydb OWNER myuser;
+     CREATE USER kynguyenx WITH PASSWORD 'kynguyenx';
+     CREATE DATABASE postgres OWNER kynguyenx;
      ```
 
 - **Cấu hình**:
