@@ -54,41 +54,41 @@ Cập nhật hệ thống trước: `sudo apt update && sudo apt upgrade -y`.
      work_mem = 16MB
      # với 64G ram và 32Vcpu
      ALTER SYSTEM SET
- max_connections = '60000';
-ALTER SYSTEM SET
- shared_buffers = '16GB';
-ALTER SYSTEM SET
- effective_cache_size = '48GB';
-ALTER SYSTEM SET
- maintenance_work_mem = '2GB';
-ALTER SYSTEM SET
- checkpoint_completion_target = '0.9';
-ALTER SYSTEM SET
- wal_buffers = '16MB';
-ALTER SYSTEM SET
- default_statistics_target = '100';
-ALTER SYSTEM SET
- random_page_cost = '1.1';
-ALTER SYSTEM SET
- effective_io_concurrency = '200';
-ALTER SYSTEM SET
- work_mem = '279kB';
-ALTER SYSTEM SET
- huge_pages = 'try';
-ALTER SYSTEM SET
- min_wal_size = '2GB';
-ALTER SYSTEM SET
- max_wal_size = '8GB';
-ALTER SYSTEM SET
- max_worker_processes = '32';
-ALTER SYSTEM SET
- max_parallel_workers_per_gather = '4';
-ALTER SYSTEM SET
- max_parallel_workers = '32';
-ALTER SYSTEM SET
- max_parallel_maintenance_workers = '4';
-ALTER SYSTEM SET 
-listen_addresses = '*';
+       max_connections = '60000';
+    ALTER SYSTEM SET
+      shared_buffers = '16GB';
+    ALTER SYSTEM SET
+      effective_cache_size = '48GB';
+    ALTER SYSTEM SET
+      maintenance_work_mem = '2GB';
+    ALTER SYSTEM SET
+     checkpoint_completion_target = '0.9';
+    ALTER SYSTEM SET
+     wal_buffers = '16MB';
+    ALTER SYSTEM SET
+     default_statistics_target = '100';
+    ALTER SYSTEM SET
+     random_page_cost = '1.1';
+    ALTER SYSTEM SET
+     effective_io_concurrency = '200';
+    ALTER SYSTEM SET
+     work_mem = '279kB';
+    ALTER SYSTEM SET
+     huge_pages = 'try';
+    ALTER SYSTEM SET
+     min_wal_size = '2GB';
+    ALTER SYSTEM SET
+     max_wal_size = '8GB';
+    ALTER SYSTEM SET
+     max_worker_processes = '32';
+    ALTER SYSTEM SET
+     max_parallel_workers_per_gather = '4';
+    ALTER SYSTEM SET
+     max_parallel_workers = '32';
+    ALTER SYSTEM SET
+     max_parallel_maintenance_workers = '4';
+    ALTER SYSTEM SET 
+    listen_addresses = '*';
      ```
      Restart: `sudo systemctl restart postgresql`
   2. `/etc/postgresql/17/main/pg_hba.conf`:
