@@ -56,7 +56,7 @@ Cập nhật hệ thống trước: `sudo apt update && sudo apt upgrade -y`.
      Restart: `sudo systemctl restart postgresql`
   2. `/etc/postgresql/17/main/pg_hba.conf`:
      ```bash
-     host all all 192.168.10.0/24 md5
+     host all all 192.168.10.0/24 scram-sha-256
      ```
      Reload: `sudo systemctl reload postgresql`
   3. Firewall: `sudo ufw allow 5432/tcp`
