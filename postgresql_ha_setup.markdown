@@ -1,4 +1,4 @@
-# Thiết Lập Cụm HA PostgreSQL Với PgBouncer Và HAProxy Trên Ubuntu (Cập Nhật 09/09/2025)
+# Thiết Lập Cụm HA PostgreSQL Với PgBouncer Và HAProxy Trên Ubuntu
 
 Tài liệu này cung cấp hướng dẫn chi tiết để thiết lập cụm High Availability (HA) cho PostgreSQL với:
 - **1 node PostgreSQL**: hostname `vlo-pg01`, IP `192.168.10.20`
