@@ -42,7 +42,7 @@ Cập nhật hệ thống trước: `sudo apt update && sudo apt upgrade -y`.
      ```bash
      sudo -u postgres psql
      CREATE USER kynguyenx WITH PASSWORD 'kynguyenx';
-     CREATE DATABASE postgres OWNER kynguyenx;
+     GRANT CONNECT ON DATABASE postgres TO kynguyenx;
      ```
 
 - **Cấu hình**:
