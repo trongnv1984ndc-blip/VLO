@@ -52,8 +52,7 @@ Cập nhật hệ thống trước: `sudo apt update && sudo apt upgrade -y`.
      max_connections = 500
      shared_buffers = 8GB
      work_mem = 16MB
-     # với 64G ram và 32Vcpu
-     ALTER SYSTEM SET
+    ALTER SYSTEM SET
        max_connections = '60000';
     ALTER SYSTEM SET
       shared_buffers = '16GB';
