@@ -30,7 +30,7 @@ sudo apt -y install curl openssh-client ufw python3 python3-venv
 sudo adduser --disabled-password --gecos "" pgops
 echo "pgops ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/pgops
 
-# 3. SSH key for pgops (generate once per node, copy to the others)
+# 3. (Recommended) SSH key for pgops (generate once per node, copy to the others)
 sudo -iu pgops bash <<'EOF'
 ssh-keygen -t ed25519 -N "" -f ~/.ssh/id_ed25519
 for h in pgedge01 pgedge02 pgedge03; do
