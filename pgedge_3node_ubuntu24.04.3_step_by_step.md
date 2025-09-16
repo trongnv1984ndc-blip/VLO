@@ -65,7 +65,7 @@ sudo -iu pgops bash -lc "python3 -c \"\$(curl -fsSL https://downloads.pgedge.com
 ## Set environment varible 
 ---
 ```bash
-echo 'export PATH='/opt/pgedge/bin:
+echo 'export PATH='export PATH=/home/pgops/pgedge:
 $PATH >> ~/.bashrc
 source ~/.bashrc
 ```
