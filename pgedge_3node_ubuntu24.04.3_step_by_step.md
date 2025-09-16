@@ -62,7 +62,7 @@ sudo ufw enable
 sudo -iu pgops bash -lc "python3 -c \"\$(curl -fsSL https://downloads.pgedge.com/platform/repos/download/install.py)\""
 ```
 ---
-## set environment varible 
+## Set environment varible 
 ---
 ```bash
 echo 'export PATH='/opt/pgedge/bin:
