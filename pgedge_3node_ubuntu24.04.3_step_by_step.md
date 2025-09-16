@@ -62,10 +62,11 @@ sudo ufw enable
 sudo -iu pgops bash -lc "python3 -c \"\$(curl -fsSL https://downloads.pgedge.com/platform/repos/download/install.py)\""
 ```
 ## set environment varible 
+```bash
 echo 'export PATH='/opt/pgedge/bin:
 $PATH >> ~/.bashrc
 source ~/.bashrc
-
+```
 ---
 
 ## 3) Initialize Postgres + pgEdge (on **each** node)
